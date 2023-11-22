@@ -1,6 +1,12 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+
+  display: flex; 
+  padding: 8px; /* Space btwn items and edge of header */
+  gap: 8px; /* Space btwn left list, logo, and right list */
+  justify-content: space-between; /* Push lists to outside, "center" logo */
+  align-items: center; /* Center items vertically (cross-axis) */
 }
 
 .logo {
@@ -14,6 +20,10 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+
+  display: flex;
+  gap: 8px; /* Create space btwn list items */
+  padding-left: 0; /* By default, lists have padding on the left */
 }
 
 a {
