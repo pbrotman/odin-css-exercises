@@ -12,6 +12,17 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+
+  display: flex;
+  align-items: center; /* center vertically (cross axis) */
+  padding: 8px; /* space btwn items and edge of header */
+  justify-content: space-between; /* left/right header go to edges */
+}
+
+
+.header-left, .header-right, ul {
+  display: flex;
+  gap: 16px; /* space btwn items */
 }
 
 .profile-image {
@@ -45,4 +56,5 @@ a {
 
 ul {
   list-style-type: none;
+  padding-left: 0; /* remove default list padding of 40px */
 }
