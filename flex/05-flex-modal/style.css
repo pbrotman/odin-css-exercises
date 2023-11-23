@@ -20,6 +20,22 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+  padding: 16px; /* space around outside of modal */
+  gap: 16px; /* equal space on both sides of icon */
+}
+
+/* vertically space content (to match image) */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content-top {
+  display: flex;
+  justify-content: space-between; /* send close button to right */
 }
 
 .icon {
@@ -33,6 +49,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0; /* prevent icon from squishing */
+}
+
+/* Header is big and bold */
+.header {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .close-button {
